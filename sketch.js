@@ -1,5 +1,4 @@
 import { Flock } from "./Flock.js";
-import { Example } from "./BeispielWesen.js";
 import { Boid } from "./Boid.js";
 import { Wanderer } from "./Wanderer.js";
 import { Plant } from "./plant.js";
@@ -49,7 +48,7 @@ window.preload = function () {
   annaFisch4Img = loadImage("./assets/annafisch4.png");
   blobFischImg = loadImage("./assets/blobfisch.png");
   playerImg = loadImage("./assets/liebesfrosch.png");
-  grummelKarpfenImg = loadImage("./assets/grummelKarpfen.png");
+  grummelKarpfenImg = loadImage("./assets/grummelkarpfen.png");
 };
 
 // Die Setup wird 1mal am Anfang ausgefuehrt.
@@ -166,11 +165,6 @@ window.draw = function () {
 
   plants.forEach((plant) => plant.display());
   player.display();
-};
-
-const renderMushrooms = () => {
-  image(pilzImg, 200, 300, 100, 150);
-  image(pilzImg, 150, 350, 70, 100);
 };
 
 window.mousePressed = function () {
